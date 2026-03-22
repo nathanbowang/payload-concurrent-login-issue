@@ -28,8 +28,6 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
-    // Avoid interactive "push schema" prompts during tests / CI (run migrations when schema changes).
-    push: false,
   }),
   sharp,
   plugins: [],

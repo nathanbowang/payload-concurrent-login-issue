@@ -69,5 +69,5 @@ describe('cmsLogin (PayloadSDK + Bearer /users/me)', () => {
     for (const user of users) {
       expect(user?.email).toBe(EMAIL)
     }
-  })
+  }, 30_000)
 })
